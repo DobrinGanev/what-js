@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.12/esri/css/esri.css">
+    <link rel="stylesheet" href="/Bootstrap-Fonts/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Bootstrap-Fonts/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/someTiles.css">
+    <link rel="stylesheet" href="stylesheets/jquery-ui-1.10.0.custom.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slick-default-theme.css">
+   
+    <link rel="stylesheet" type="text/css" href="stylesheets/BootSideMenu.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slick.grid.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/custom.css">
+    <title>Map</title>
+</head>
+<body id="documentBody">
+    <script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="http://js.arcgis.com/3.11/"></script>
+    <script defer type="text/javascript" src="js/main.js"></script>
+    <script defer type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script defer type="text/javascript" src="js/BootSideMenu.js"></script>
+    <script defer type="text/javascript" src="js/component_data/map.js"></script>
+    <script defer type="text/javascript" src="js/flight.js"></script>
+
+    <div id="map"></div>
+    <div id="navTree" style="width: 380px;">
+        <div class="row" style="width: 378px;">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#appAccordion">
+                                <span class="glyphicon glyphicon-th">
+                                </span>Applications
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="appAccordion" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div id="appContainer" style="padding: 10px" class="col-lg-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <span class="glyphicon glyphicon-search">
+                                </span>Search
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="right-inner-addon">
+                                <i class="glyphicon glyphicon-search"></i>
+                                <input type="search"
+                                       class="form-control"
+                                       placeholder="Search" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                <span class="glyphicon glyphicon-user">
+                                </span>Account
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <a href="https://github.com/DobrinGanev">Change Password</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://github.com/DobrinGanev">Notifications</a> <span class="label label-info">5</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://github.com/DobrinGanev">Import/Export</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-trash text-danger"></span><a href="https://github.com/DobrinGanev" class="text-danger">
+                                      Delete Account
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#mapSelectionAccordion">
+                                <span class="glyphicon glyphicon-file">
+                                </span>Map Selection
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="mapSelectionAccordion" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div id="mapSelection" style="padding: 10px" class="col-lg-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#mapLayersAccordion">
+                                <span class="glyphicon glyphicon-list-alt">
+                                </span>Map Layers
+                            </a>
+                            <span id="refreshMapLayers" class="fa fa-refresh" style="padding-left: 180px; cursor: pointer; "></span>
+                        </h4>
+
+                    </div>
+                    <div id="mapLayersAccordion" class="panel-collapse collapse">
+                        <div class="container">
+                            <div id="mapLayers" class="col-lg-12"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                <span class="glyphicon glyphicon-question-sign">
+                                </span>Help
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-usd"></span><a href="https://github.com/DobrinGanev">Sales</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-user"></span><a href="https://github.com/DobrinGanev">Customers</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-tasks"></span><a href="https://github.com/DobrinGanev">Products</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-shopping-cart"></span><a href="https://github.com/DobrinGanev">Shopping Cart</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

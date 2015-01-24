@@ -1,0 +1,128 @@
+html, body, #map {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+td.mailContact,
+span.mailSubject,
+span.mailMessage {
+    font-size: 15px;
+}
+
+td.mailContact,
+span.mailSubject {
+    font-weight: bold;
+}
+
+tr.mail-item.selected td,
+li.folder-item.selected,
+li.move-to-item.selected {
+    background-color: #D9EDF7;
+}
+
+    tr.mail-item.selected:hover td,
+    li.folder-item.selected:hover,
+    li.move-to-item.selected:hover {
+        background-color: #C1E1FF;
+    }
+
+li.folder-item:hover,
+li.move-to-item:hover {
+    background-color: #EDEDED;
+}
+
+li.folder-item,
+li.move-to-item {
+    padding: 3px 0;
+    margin-left: -15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+li.move-to-item {
+    text-align: center;
+    margin-right: -15px;
+}
+
+#new_mail {
+    width: 100px;
+}
+
+div.compose-box {
+    position: absolute;
+    z-index: 10;
+    background-color: #FFFFFF;
+    width: 350px;
+    border: 0;
+    -ms-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    -ms-box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+div.compose-body {
+    padding: 0;
+}
+
+div.compose-header {
+    font-size: 15px;
+}
+
+#recipient_select {
+    width: 90%;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+div.hint {
+    border: 1px solid #EAEAEA;
+    color: #CACACA;
+}
+
+#compose_message {
+    height: 180px;
+}
+
+#compose_subject,
+#compose_message {
+    font-size: 15px;
+    padding: 15px;
+}
+
+#move_to_selector {
+    position: absolute;
+    z-index: 10;
+    background-color: #FFFFFF;
+    border: 1px solid;
+}
+
+
+.searchbutton {
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    border: 0;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    height: 32px;
+    left: 400px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    vertical-align: top;
+    width: 72px;
+    z-index: -1;
+    margin-left: 0;
+    -webkit-transition: margin-left 200ms ease-out 0;
+    transition: margin-left 200ms ease-out 0;
+}
+
+.table th, .table td {
+    border-top: none;
+}
+.glyphicon { margin-right:10px; }
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }

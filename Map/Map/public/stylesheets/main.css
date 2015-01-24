@@ -1,0 +1,82 @@
+﻿.glyphicon {
+    margin-right: 10px;
+}
+
+.panel-body {
+    padding: 0px;
+}
+
+    .panel-body table tr td {
+        padding-left: 15px;
+    }
+
+    .panel-body .table {
+        margin-bottom: 0px;
+    }
+
+.esriAttribution {
+    display: none;
+}
+
+.map .logo-med {
+    display: none;
+}
+
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-inner-addon {
+    position: relative;
+}
+
+    .left-inner-addon input {
+        padding-left: 30px;
+    }
+
+    .left-inner-addon i {
+        position: absolute;
+        padding: 10px 12px;
+        pointer-events: none;
+    }
+
+.right-inner-addon {
+    position: relative;
+    padding: 10px;
+}
+
+    .right-inner-addon input {
+        padding-right: 15px;
+    }
+
+    .right-inner-addon i {
+        position: absolute;
+        right: 0px;
+        padding: 20px;
+        pointer-events: none;
+    }
+
+.cell-story {
+    white-space: normal !important;
+    line-height: 19px !important;
+}
+
+.loading-indicator {
+    display: inline-block;
+    padding: 12px;
+    background: white;
+    -opacity: 0.5;
+    color: black;
+    font-weight: bold;
+    z-index: 9999;
+    border: 0;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+    .loading-indicator label {
+        padding-left: 20px;
+        background: url('/images/ajax-loader-small.gif') no-repeat center left;
+    }

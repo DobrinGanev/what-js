@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Map", "Map\Map.njsproj", "{4D1C47DA-9413-4FA0-A16E-12B7DB2DC99A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://petroweb.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Map\\Map.njsproj
+		SccProjectName1 = Map
+		SccLocalPath1 = Map
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D1C47DA-9413-4FA0-A16E-12B7DB2DC99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1C47DA-9413-4FA0-A16E-12B7DB2DC99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1C47DA-9413-4FA0-A16E-12B7DB2DC99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1C47DA-9413-4FA0-A16E-12B7DB2DC99A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

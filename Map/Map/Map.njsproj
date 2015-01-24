@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Map</Name>
+    <RootNamespace>Map</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4d1c47da-9413-4fa0-a16e-12b7db2dc99a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="public\db\users.js" />
+    <Compile Include="public\js\appLoader.js" />
+    <Compile Include="public\js\BootSideMenu.js" />
+    <Compile Include="public\js\bootstrap.min.js" />
+    <Compile Include="public\js\component_data\log.js" />
+    <Compile Include="public\js\component_data\map.js" />
+    <Compile Include="public\js\flight.js" />
+    <Compile Include="public\js\jquery-ui-1.9.2.custom.min.js" />
+    <Compile Include="public\js\jquery.event.drag-2.2.js" />
+    <Compile Include="public\js\jquery.event.drop-2.2.js" />
+    <Compile Include="public\js\main.js" />
+    <Compile Include="public\js\slick.core.js" />
+    <Compile Include="public\js\slick.dataview.js" />
+    <Compile Include="public\js\slick.editors.js" />
+    <Compile Include="public\js\slick.formatters.js" />
+    <Compile Include="public\js\slick.grid.js" />
+    <Compile Include="public\js\slick.groupitemmetadataprovider.js" />
+    <Compile Include="public\js\slick.remotemodel.js" />
+    <Compile Include="public\js\slick.rowselectionmodel.js" />
+    <Compile Include="public\Modules\mapLayersModule\component_data\mapLayers.js" />
+    <Compile Include="public\Modules\mapLayersModule\main.js" />
+    <Compile Include="public\Modules\mapModule\component_data\map.js" />
+    <Compile Include="public\Modules\mapModule\main.js" />
+    <Compile Include="public\Modules\selectionToolModule\component_ui\selectionTool.js" />
+    <Compile Include="public\Modules\selectionToolModule\main.js" />
+    <Compile Include="public\Modules\selectionToolModule\templates\gridHolder.js" />
+    <Compile Include="public\Modules\selectionToolModule\templates\selectToolTemplate.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\users.js" />
+    <Compile Include="bin\www" />
+    <Content Include="package.json" />
+    <Content Include="public\Bootstrap-Fonts\bootstrap-theme.css" />
+    <Content Include="public\Bootstrap-Fonts\bootstrap-theme.css.map" />
+    <Content Include="public\Bootstrap-Fonts\bootstrap-theme.min.css" />
+    <Content Include="public\Bootstrap-Fonts\bootstrap.css" />
+    <Content Include="public\Bootstrap-Fonts\bootstrap.css.map" />
+    <Content Include="public\Bootstrap-Fonts\bootstrap.min.css" />
+    <Content Include="public\Bootstrap-Fonts\font-awesome.css" />
+    <Content Include="public\Bootstrap-Fonts\font-awesome.min.css" />
+    <Content Include="public\Bootstrap-Fonts\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\Bootstrap-Fonts\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\Bootstrap-Fonts\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\Bootstrap-Fonts\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\Bootstrap-Fonts\fonts\FontAwesome.otf" />
+    <Content Include="public\Bootstrap-Fonts\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\Bootstrap-Fonts\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\Bootstrap-Fonts\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\Bootstrap-Fonts\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\Bootstrap-Fonts\fonts\iconFont.dev.svg" />
+    <Content Include="public\Bootstrap-Fonts\fonts\iconFont.eot" />
+    <Content Include="public\Bootstrap-Fonts\fonts\iconFont.json" />
+    <Content Include="public\Bootstrap-Fonts\fonts\iconFont.svg" />
+    <Content Include="public\Bootstrap-Fonts\fonts\iconFont.ttf" />
+    <Content Include="public\Bootstrap-Fonts\fonts\iconFont.woff" />
+    <Content Include="public\Bootstrap-Fonts\fonts\metroSysIcons.svg" />
+    <Content Include="public\Bootstrap-Fonts\fonts\metroSysIcons.ttf" />
+    <Content Include="public\Bootstrap-Fonts\fonts\metroSysIcons.woff" />
+    <Content Include="public\images\actions.gif" />
+    <Content Include="public\images\ajax-loader-small.gif" />
+    <Content Include="public\images\app-map-icon.png" />
+    <Content Include="public\images\arrow_redo.png" />
+    <Content Include="public\images\arrow_right_peppermint.png" />
+    <Content Include="public\images\arrow_right_spearmint.png" />
+    <Content Include="public\images\arrow_undo.png" />
+    <Content Include="public\images\bullet_blue.png" />
+    <Content Include="public\images\bullet_star.png" />
+    <Content Include="public\images\bullet_toggle_minus.png" />
+    <Content Include="public\images\bullet_toggle_plus.png" />
+    <Content Include="public\images\calendar.gif" />
+    <Content Include="public\images\collapse.gif" />
+    <Content Include="public\images\comment_yellow.gif" />
+    <Content Include="public\images\down.gif" />
+    <Content Include="public\images\drag-handle.png" />
+    <Content Include="public\images\earth-icon.png" />
+    <Content Include="public\images\editor-helper-bg.gif" />
+    <Content Include="public\images\expand.gif" />
+    <Content Include="public\images\gnome_text_x_generic.png" />
+    <Content Include="public\images\header-bg.gif" />
+    <Content Include="public\images\header-columns-bg.gif" />
+    <Content Include="public\images\header-columns-over-bg.gif" />
+    <Content Include="public\images\help.png" />
+    <Content Include="public\images\info.gif" />
+    <Content Include="public\images\Layers-icon.png" />
+    <Content Include="public\images\listview.gif" />
+    <Content Include="public\images\pencil.gif" />
+    <Content Include="public\images\row-over-bg.gif" />
+    <Content Include="public\images\sort-asc.gif" />
+    <Content Include="public\images\sort-asc.png" />
+    <Content Include="public\images\sort-desc.gif" />
+    <Content Include="public\images\sort-desc.png" />
+    <Content Include="public\images\stripes.png" />
+    <Content Include="public\images\tag_red.png" />
+    <Content Include="public\images\tick.png" />
+    <Content Include="public\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="public\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="public\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="public\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="public\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="public\images\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="public\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="public\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="public\images\ui-icons_222222_256x240.png" />
+    <Content Include="public\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="public\images\ui-icons_454545_256x240.png" />
+    <Content Include="public\images\ui-icons_888888_256x240.png" />
+    <Content Include="public\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="public\images\ui-icons_f6cf3b_256x240.png" />
+    <Content Include="public\images\user_identity.gif" />
+    <Content Include="public\images\user_identity_plus.gif" />
+    <Content Include="public\stylesheets\BootSideMenu.css" />
+    <Content Include="public\stylesheets\custom.css" />
+    <Content Include="public\stylesheets\jquery-ui-1.10.0.custom.css" />
+    <Content Include="public\stylesheets\main.css" />
+    <Content Include="public\stylesheets\normalize.css" />
+    <Content Include="public\stylesheets\sidebar.css" />
+    <Content Include="public\stylesheets\slick-default-theme.css" />
+    <Content Include="public\stylesheets\slick.grid.css" />
+    <Content Include="public\stylesheets\slide_menu.css" />
+    <Content Include="public\stylesheets\someTiles.css" />
+    <Content Include="README.md" />
+    <Content Include="views\index.jade" />
+    <Content Include="views\layout.jade" />
+    <Content Include="views\error.jade" />
+    <Content Include="views\map.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="public\db\" />
+    <Folder Include="public\" />
+    <Folder Include="public\Bootstrap-Fonts\" />
+    <Folder Include="public\Bootstrap-Fonts\fonts\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\js\component_data\" />
+    <Folder Include="public\Modules\" />
+    <Folder Include="public\Modules\mapLayersModule\" />
+    <Folder Include="public\Modules\mapLayersModule\component_data\" />
+    <Folder Include="public\Modules\mapModule\" />
+    <Folder Include="public\Modules\mapModule\component_data\" />
+    <Folder Include="public\Modules\selectionToolModule\" />
+    <Folder Include="public\Modules\selectionToolModule\component_ui\" />
+    <Folder Include="public\Modules\selectionToolModule\templates\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
