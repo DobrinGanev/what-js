@@ -43,7 +43,7 @@ Consists of application containers, modules, and extensions.
                     ]
                 },
  
-How it Works
+# How it Works
 1.Application configuration data is requested by the client.
  Configuration data consists of application containers (UI), location and path to modules.    
  Each module can have multiple executable (JavaScript) client applications.
