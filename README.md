@@ -1,9 +1,7 @@
 #<a id="what-js" class="anchor" href="#what-js" aria-hidden="true"><span class="octicon octicon-link"></span></a>what-js</h1>
 
-An event-driven JavaScript framework using Twitter's Flight JS, ArcGIS JavaScript API, JQuery, Node.js. Consists of application containers, modules, and extensions.
+An event-driven JavaScript solution using Twitter's Flight JS, ArcGIS JavaScript API, JQuery, Node.js. Consists of application containers, modules, and extensions.
 <p><img src="https://raw.githubusercontent.com/DobrinGanev/what-js/master/maphtml.png" alt="ScreenShot"></p>
-
-
 
 <pre><code>"applications": [
             {
@@ -46,8 +44,6 @@ An event-driven JavaScript framework using Twitter's Flight JS, ArcGIS JavaScrip
 <a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How it Works</h3>
 
 <p>Application configuration data is requested by the client.Configuration data consists of application containers (UI), location and path to modules. Each module can have multiple executable (JavaScript) client applications. Application modules and extensions are loaded and build on the client side. </p>
-
-<p>All the JavaScript files are defined as dojo modules and loaded asynchronously with <b>require</b> module loader. FlightJS components are wrapped in dojo modules.</p>
 
 <p>Module components have an unique Id defined in the database.They can call other modules and receive a response based on their unique Id.</p>
 
